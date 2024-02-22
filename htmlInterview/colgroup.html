@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colgroup</title>
+    <link rel="stylesheet" href="colgroup.css">
+</head>
+<body>
+    <table style="width:50%" >  <!--table width increse-->
+        <colgroup><!--col group is used in column 2 blue -->
+            <!--If you want to style columns in the middle of a table, insert a "empty" <col> element (with no styles) for the columns <before:</before:-->
+            <!--<col span="2">-->
+            <!--<col span="1" style="background-color: red;">--> 
+            <col span="2">
+            <!--You can hide columns with the visibility: collapse property:-->
+            <col span="1" style="visibility: collapse;">
+        </colgroup>
+        <tr>
+            <th>Name</th>
+            <th>address</th>
+            <th>rollno</th>
+        </tr>
+            <tr>
+            <td>Rohit</td><!--td is using in table data-->
+            <td>Cbr</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>Mohit</td>
+            <td>Tgrm</td>
+            <td>23</td>
+        </tr>
+    </table>
+</body>
+</html>

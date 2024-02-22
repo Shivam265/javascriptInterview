@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selecter in css</title>
+    <style>
+        /* Element selector*/
+        div{
+            /*background-color: red;*/
+        }
+
+        /* class selector*/
+        .red{
+            background-color: red;
+        }
+
+        #green{
+            background-color: green;
+        }
+
+        /* child selector div direct <p> child change value  */
+        div > p{
+            color:blue;
+            background-color: yellow;
+        }
+
+        /* Descendent Selector
+        div inside <p> anything element change value*/
+
+        div  p{
+            color:blue;
+            background-color: yellow;
+        }
+
+        /* Universal selecter (*)*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* pseudo selecter*/
+
+        /*a:hover{
+            color:aqua;
+            font-size: 20px;
+        }*/
+
+        /* a link visit user change color brown*/
+        a:visited{
+            color:brown;
+        }
+
+        a:link{
+            color:chocolate;
+        }
+
+        a:active{
+            background-color: aqua;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="one">i am selecter one</div>
+    <div class="red"> i am div 
+        <article>
+        <p>i am para inside div </p>
+        </article>
+    </div>
+    
+    <div id="green">i am another div</div>
+    <a href="https://www.google.com">Go to google</a>
+    <a href="https://www.youtube.com">YouTube</a>
+    
+</body>
+</html>

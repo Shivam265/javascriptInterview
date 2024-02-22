@@ -1,0 +1,38 @@
+ ul{
+    margin:0px;
+    padding: 0px;
+    list-style-type: none;
+    overflow: hidden;
+    background-color:#333333;
+    
+    
+
+
+ }
+
+ li{
+    float:left;
+    
+ }
+
+
+
+ li a{
+    text-decoration: none;
+ }
+
+ ul li{
+    padding: 12px;
+ }
+
+ li a:hover{
+    background-color:black;
+
+ }
+
+.search{
+    float:right;
+    margin:10px;
+    cursor: pointer;
+
+}

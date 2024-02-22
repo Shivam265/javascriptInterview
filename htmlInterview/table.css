@@ -1,0 +1,17 @@
+table ,th,td{
+    border:2px solid black;/*boder  using in double line  css row and column*/
+    border-collapse: collapse;/* border collapse table using in css single line*/
+    border-radius: 30px;/* border radius used in rounded corner*/
+    border-color:blue;/* border color table line change color */ 
+}
+ th,td{
+    background-color: aqua;
+    border-style: dotted;
+    border-style: solid;
+   
+ }
+
+ /*table{
+    width:100%;
+ } table width full display screen*/
+

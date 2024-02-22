@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Form to apply for Sigma Web Development Course</h1>
+    <form action="post">
+
+        <!--
+            type="text" specifies that the input should accept plain text.
+            name="username" is the name attribute, which is used to identify the input when submitting a form.
+            id="username" is the id attribute, which provides a unique identifier for the input element. It can be used for styling or scripting purposes.
+            placeholder="Enter your username" is the placeholder attribute, which provides 
+        -->
+        <div>
+            <label for="username">username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username">
+            
+        </div>
+
+        <div>
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="pwd">
+        </div>
+
+        
+        <div>
+            <!--Radio buttons let a user select ONLY ONE of a limited number of choices:-->
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+
+        <div>
+            <!--Checkboxes let a user select ZERO or MORE options of a limited number of choices.-->
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="bike">
+            <label for="vehicle1">only bikes</label>
+        </div>
+
+
+        <div>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="car">
+            <label for="vehicle2">Only cars</label>
+        </div>
+
+
+        <select name="course">
+            <option value="BCA">BCA</option>
+            <option value="MCA">MCA</option>
+            <option value="MBA">MBA</option>
+            <option value="BBA">BBA</option>
+        </select>
+
+
+        <div>
+            <textarea name="comment" rows="5" cols="30">Enter yout comment here:</textarea>
+        </div>
+
+        <div>
+            <input type="Submit" value="Submit">
+            <input type="Reset" value="Submit">
+        </div>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css variable </title>
+    <style>
+
+        /* global variable */
+
+        :root{
+            --color:rgb(143, 4, 80);
+            --setcolor:rgb(85,15,177);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        ul li{
+            list-style: none;
+        }
+
+        /* local vraiable in css   override */
+        ul li:first-child{
+            /* override in global vriable color*/
+            --color:rgb(85,15,17);
+            background-color: var(--color,blue);
+
+        }
+
+        ul{
+            display: flex;
+        }
+
+        li{
+            padding: 10px;
+        }
+        .nav{
+            background-color:var(--color);
+        }
+
+        .container{
+            background-color: var(--setcolor);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contect</li>
+        </ul>
+    </div>
+
+    <div class="container">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla minima a maiores. Enim aspernatur perspiciatis nemo delectus, amet dolor eius numquam ut iure accusantium vitae temporibus expedita at molestias velit, facilis saepe. Autem nulla tenetur, ullam qui quo et porro aut temporibus ipsam fuga repellendus?</div>
+    
+</body>
+</html>

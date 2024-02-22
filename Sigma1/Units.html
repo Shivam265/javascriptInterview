@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>units in css</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px solid red;
+            /*width:1354px;*/
+            /* width 100vw in viewport size equal*/
+            width:100vw;
+            width:80vw;
+            margin: auto;
+            background-color: aqua;
+        }
+
+        .container{
+            border: 2px solid red;
+            /*width:1354px;*/
+            /* width 100vw in viewport size equal*/
+            /*width:100vw;*/
+            width:80vw;
+            /*height:80vh;*/
+            font-size: 18px;
+            margin: 23px auto;
+            min-height: 80vh;
+            background-color: aqua;
+
+        }
+
+        /* html in root element */
+        html{
+                font-size: 12px;
+            }
+
+        .container div{
+            /* font size property inherit parent element in font size * and font size default value 18px/
+
+            /* Relative to the font-size of the element (2em means 2 times the size of the current font)*/
+
+            /*1em  = 16px*/
+            /*font-size: 2em;*/
+
+            /* 2rem element root element <html> in  2 times*/ 
+            font-size: 2rem ;
+            /* width 50% parent element in 50 percent */
+            width:50%;
+            border: 5px solid red;
+        }
+
+        .mycont{
+           
+            color:yellow;
+            font-size: 22px;
+            /* 100vmin height laptop work
+            width:100vmin;*/
+            border:  2px solid black;
+            box-sizing: border-box;
+            width:80vw;
+            margin: auto;
+
+        }
+        .container div div{
+            border: 2px solid green;
+            width:50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">i am box</div>
+    <div class="container">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum iusto rerum id suscipit veniam autem nobis laudantium voluptate maiores nulla cum nemo excepturi, animi sunt ut commodi a in sit neque dolore! Provident, expedita dolores possimus veritatis quia necessitatibus tempora, facilis maxime cumque placeat aut!
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum officia, placeat odit aliquam magni temporibus maxime expedita impedit cumque, obcaecati quaerat harum iste!</div>
+        </div>
+        </div>
+
+
+        <div class="mycont">
+            i am another my container 
+        </div>
+
+    
+    
+</body>
+</html>

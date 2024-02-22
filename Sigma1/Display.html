@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display in css  </title>
+    <!--The display property is used to change the default display behavior of HTML elements.-->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box{
+            /* display inline property used in element inline but top to margin,padding
+           and width not work and work using display inline block */
+            /*display: inline;*/
+
+            /* display inline block property used in user according top in
+            margin,padding,height,width */
+            display: inline-block;
+            border:  2px solid red;
+            padding: 35px;
+            margin: 30px;
+            width:20px;
+            
+        }
+
+        .box1{
+            /* Display none property used in element hide and space remove both 
+            hide */
+            /*display: none;*/
+
+            /* Visibility hidden property used in element hide but space 
+            not hide */  
+
+            visibility: hidden;
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box box1">i am box </div>
+    <div class="box">yes ok</div>
+    <span>i am good</span>
+    <span>boy</span>
+    
+</body>
+</html>

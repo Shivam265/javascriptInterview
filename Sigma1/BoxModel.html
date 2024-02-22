@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model in css</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        .box{
+            background-color: aqua;
+        }
+
+        .box1{
+            color:red;
+            /* padding inside the content */
+            padding: 10px;
+            /* margin collapse used in margin in box heighest in set margin and next box margin collapse */
+            margin: 45px;
+            border: 2px solid green;
+            /*padding  and border calculate add equal to heigth or add box-sizing:border-box;*/
+            height: 190px;
+            box-sizing: border-box;
+
+        }
+
+        .box2{
+            color:blue;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid black;
+            /*padding  and border add equal to heigth or add box-sizing:border-box;*/
+            height: 190px;
+            box-sizing: border-box;
+
+        }
+        
+
+    </style>
+</head>
+<body>
+
+    <div class="box box1"> i am a  box1 </div>
+    <div class="box box2"> i am a  box2 </div>
+    <!-- Content: 1
+    The actual content of the box, which can include text, images, or other media.
+    
+    Padding:2
+    The space between the content and the border. It's often used to provide some breathing room within the element.
+    
+    Border:3
+    A border surrounding the padding (if any). It separates the padding from the margin and can have its own set of styles, such as color, width, and style.
+    
+    Margin:4
+    The space outside the border. It provides spacing between the element's border and adjacent elements.*/ -->   
+    
+    
+</body>
+</html>

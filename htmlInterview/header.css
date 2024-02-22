@@ -1,0 +1,51 @@
+.navbar{
+    margin: 0;
+    padding: 0;
+    background-color:black;
+    border-radius: 15px;
+    position: sticky;
+}
+
+.navbar ul{
+    overflow: auto;
+}
+
+.navbar li {
+    float:left;
+    list-style: none;
+    padding: 0px;
+    margin: 13px 20px;
+    
+    
+
+}
+
+.navbar li a{
+    padding: 3px 3px;
+    text-decoration: none;
+    color:white;
+    margin:10px;
+    font-size: 1.5rem;
+
+
+}
+.navbar li a:hover{
+    color: red;
+
+
+}
+
+.search{
+    float:right;
+    color:white;
+    padding:4px 5px;
+
+}
+
+.navbar input{
+    border:5px solid black;
+    border-radius: 10px;
+    display: flex;
+    padding: 12px;
+}
+
